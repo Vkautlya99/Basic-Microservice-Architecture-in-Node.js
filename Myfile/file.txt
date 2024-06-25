@@ -1,0 +1,20 @@
+//require the mongoose :
+const mongoose = require("mongoose");
+
+// Connect with the Database 
+mongoose.connect("mongodb://127.0.0.1:27017/mongoDbPractice")
+
+// Create Schema 
+const UserSchema = mongoose.Schema({
+    name: String,
+    age: Number,
+    username: String,
+    email : String
+})
+
+// Export the model after giving the name to the model
+module.exports =  mongoose.model("user", UserSchema);
+
+
+
+NOTE :- Model is created while coding and theoretically model is known as Collection
