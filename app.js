@@ -11,7 +11,7 @@ app.use(express.json())
 
 const UserModel = require("./models/usermodel")
 const SalesModel = require("./models/salesmodel");
-const usermodel = require("./models/usermodel");
+
 
 
 app.get("/", function (req, res) {
